@@ -1,0 +1,26 @@
+header {
+    background-color: lightskyblue;
+    height: 200px;
+}
+
+nav {
+    background-color: lightcoral;
+    height: 500px;
+}
+
+main {
+    background-color: lightgreen;
+    height: 500px;
+}
+
+section {
+    background-color: orange;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+main .raw{
+    height: 400px;
+}
