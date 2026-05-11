@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milaika</title>
+    <link rel="stylesheet" href="./css/estiloL.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <header>
+        <div id="info-encabezado" class="d-flex justify-content-between align-items-center px-4 py-2">
+            <span><i class="bi bi-telephone-fill me-1"></i>Llámanos +57 300 910 8496</span>
+            <span><i class="bi bi-shield-check me-1"></i>Compras seguras online</span>
+            <span><i class="bi bi-person-check me-1"></i>Pago contra entrega</span>
+            <span><i class="bi bi-truck me-1"></i>Entregas el mismo día</span>
+            <div class="d-flex align-items-center gap-2">
+                <span>Síguenos en:</span>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-tiktok"></i>
+            </div>
+        </div>
+        <div id="info-general" class="d-flex align-items-center px-4 py-2 gap-3">
+            <a href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnsskPT2d5Bq81cOHOlB46utTSn0pMF8DHg&s"
+                    alt="logo" style="width:70px;">
+            </a>
+            <div class="input-group mx-auto" style="max-width: 550px;">
+                <input type="search" class="form-control rounded-3" placeholder="Buscar productos, marcas y más...">
+            </div>
+            <div class="d-flex align-items-center gap-3 ms-auto text-white">
+                <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1">
+                    <i class="bi bi-person fs-5"></i> Mi cuenta
+                </a>
+                <a href="#" class="text-white text-decoration-none">
+                    <i class="bi bi-cart fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!--N -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+        <div class="container-fluid px-4">
+            <ul class="navbar-nav d-flex flex-row gap-2">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Perro</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Alimento</a></li>
+                        <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Gato</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Alimento</a></li>
+                        <li><a class="dropdown-item" href="#">Arenas</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Promociones</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Tiendas</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="#">Laika Member</a></li>
+            </ul>
+            <button class="btn ms-auto d-flex align-items-center gap-2"
+                style="background-color:#560075; color:white; border-radius:8px;">
+                <i class="bi bi-geo-alt-fill"></i> Selecciona una ciudad
+                <i class="bi bi-chevron-down"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- C -->
+    <div class="container my-5">
+        <div id="carouselExampleControls" class="carousel slide rounded overflow-hidden" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"
+                    class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fbanners%2Fbaaf7b6d32c46860accacabbfc9069c0_1768838872.jpg&w=1920&q=75"
+                        class="d-block w-100" alt="Banner 1" style="max-height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fbanners%2F737f8bec4b0428b971eb0e9f8a3326a2_1778014661.jpg&w=1920&q=75"
+                        class="d-block w-100" alt="Banner 2" style="max-height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fbanners%2F737f8bec4b0428b971eb0e9f8a3326a2_1778014661.jpg&w=1920&q=75"
+                        class="d-block w-100" alt="Banner 3" style="max-height: 400px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--seccion mascotas-->
+    <section id="mascotas">
+        <div id="perro">
+            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fsettings%2Fhome%2Fperros-003.png&w=384&q=75"
+                alt="perro">
+            <p class="parrafo">Mima a tu mejor amigo forever 🎁</p>
+        </div>
+        <div id="gato">
+            <p class="parrafo">Mima a tu Dios en la tierra 🎁</p>
+            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fsettings%2Fhome%2Fgatos-003.png&w=384&q=75"
+                alt="gato">
+        </div>
+    </section>
+    <!--info empresa articulo-->
+    <section class="caja">
+        <div class="caja-imagenes">
+            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fsettings%2Fseo%2Fseo-2.jpg&w=750&q=75"
+                alt="">
+            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fsettings%2Fseo%2Fseo-4.jpg&w=384&q=75"
+                alt="">
+            <img class="grande"
+                src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fsettings%2Fseo%2Fseo-3.jpg&w=750&q=75"
+                alt="">
+        </div>
+        <article>
+            <h2>LAIKA: La Tienda Online de Mascotas que tu PET-AMIGO Necesita</h2>
+            <p class="parrafo-articulo">
+                LAIKA fue el primer ser vivo en conocer el espacio, y así se convirtió en nuestra guardiana, ahora se
+                encarga de todo el universo de cuidado y bienestar para tu PET-AMIGO en un solo lugar.
+
+                Al navegar en LAIKA descubrirás un sistema de envíos a domicilio el mismo día que te conecta desde los
+                accesorios más trendy y ado
+                Nuestra misión es acompañar sus momentos juntos, de esta forma creamos 2 universos uno de ellos digital
+                (app y web) para que sea fácil y rápido conseguir lo que necesiten y otro en tiendas físicas que
+                responde a materializar un mundo mágico para nuestros PET-AMIGOS, creemos que el amor por los animales
+                es lo que nos une, y en LAIKA, queremos ser parte de esa conexión. Únete a nosotros en este viaje
+                intergaláctico de exploración y cuidado, donde las necesidades de tu PET-AMIGOS son siempre nuestra
+                estrella polar.
+            </p>
+        </article>
+    </section>
+    <!--linea divisoria-->
+    <div class="linea-con-icono">
+        <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fsettings%2Fbranding%2Flaika_footer.png&w=128&q=75"
+            alt="icono">
+        <hr>
+    </div>
+    <!--footer-->
+    <footer>
+        <div>
+            <h3>Conócenos</h3>
+            <span>Trabaja con nosotros</span>
+            <span>Servicios</span>
+            <span>Blog</span>
+        </div>
+        <div>
+            <h3>Información</h3>
+            <span>Términos y condiciones</span>
+            <span>Preguntas frecuentes</span>
+            <span>Política y privacidad</span>
+            <span>Políticas de entrega</span>
+        </div>
+        <div>
+            <h3>Encuentranos</h3>
+            <span>Nuestras tiendas</span>
+        </div>
+        <div>
+            <h3>Suscribete</h3>
+            <span>Recibe noticias y promociones diarias:</span>
+            <input type="email">
+            <input type="submit" value=">">
+        </div>
+        <div class="info-legal">
+            <p>
+                https://www.sic.gov.co / Proyecto E S.A.S. / NIT: 901.110.407 -4 / Dirección de notificación judicial:
+                Cra 68G No. 74B - 56, Bogotá DC
+            </p>
+            <p>
+                Teléfono: +57 300 910 8496 / Correo electrónico para notificación judicial: contabilidad@laika.com.co
+            </p>
+            <div class="copyright-row">
+                <p>
+                    Copyright © LAIKA todos los derechos reservados
+                </p>
+
+                <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fsettings%2Fpayments%2Fall_pay_methods.png&w=828&q=75"
+                    alt="medios de pago">
+            </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+</html>
