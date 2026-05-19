@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    font-family: "Rubic", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 12px;
@@ -419,11 +418,82 @@ input[type=submit] {
 .btn-morado {
     background-color: #6b3fa0;
     color: purple;
-    border-radius: 12px;
+    border-radius: 15px;
     padding: 10px;
 }
 
 .btn-morado:hover {
     background-color: #552d80;
-    color: white;
+    color: purple;
 }
+.carousel-indicators {
+    position: relative;
+    margin-top: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #5c2d91;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* Mantiene las imágenes proporcionadas y recorta los excesos */
+  .custom-card {
+    transition: transform 0.2s ease;
+  }
+  .custom-card:hover {
+    transform: scale(1.01); /* Un pequeño efecto visual al pasar el mouse */
+  }
+  .object-fit-cover {
+    object-fit: cover;
+  }
+
+  .custom-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 35px 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    /* La magia de la curva se hace con border-radius asimétrico */
+    border-top-right-radius: 80px 100px;
+    z-index: 10;
+  }
+
+  /* COLORES EXACTOS DE LAS ETIQUETAS (Ajustados según tu imagen) */
+  .bg-catalogo {
+    background-color: #1ba08d; /* Verde azulado */
+  }
+  .bg-tiendas {
+    background-color: #ff8000; /* Naranja */
+  }
+  .bg-member {
+    background-color: #f1c43f; /* Amarillo / Dorado */
+    color: #333 !important; /* Texto oscuro para que resalte en el amarillo */
+  }
+  .bg-veterinario {
+    background-color: #ed5575; /* Rosado / Fucsia */
+  }
+  .bg-vetcare {
+    background-color: #4a6cf7; /* Azul */
+  }
+
+  /* Corrección responsive para que en móviles la tarjeta alta no se deforme demasiado */
+  @media (max-width: 767.98px) {
+    .custom-card img {
+      height: 200px !important;
+    }
+  }
+  .custom-dot {
+        width: 10px !important;
+        height: 10px !important;
+        background-color: transparent !important;
+        border: 2px solid #7A4293 !important;
+        opacity: 0.5;
+        transition: all 0.3s ease;
+    }
+    .custom-dot.active {
+        background-color: #7A4293 !important;
+        opacity: 1;
+    }
