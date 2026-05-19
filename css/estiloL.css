@@ -23,12 +23,36 @@
     width: 60px;
 }
 
-#buscar {
-    max-width: 400px;
-    height: 45px;
-    font-size: 16px;
-    border-radius: 9px;
-    border: 1px solid rgb(54, 43, 43);
+/* HEADER PRINCIPAL */
+#info-general {
+    background-color: #6b3fa0;
+}
+
+/* BARRA BUSCADOR */
+.search-box {
+    width: 100%;
+    max-width: 900px;
+}
+
+.search-box .input-group {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 65px;
+}
+
+.search-box input {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+/* ICONOS */
+#info-general i {
+    transition: 0.3s;
+}
+
+#info-general i:hover {
+    transform: scale(1.1);
 }
 
 #ingresar {
@@ -280,4 +304,126 @@ input[type=submit] {
     color: aliceblue;
     font-size: 12px;
     border: none;
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #5c2d91 !important;
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+}
+
+.dropdown-item:hover {
+    background-color: #f3ebff;
+    color: #5c2d91;
+}
+/* PRODUCTOS */
+
+.producto-card {
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s;
+    background: white;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-card img {
+    height: 240px;
+    object-fit: contain;
+}
+
+.marca {
+    color: #9b9b9b;
+    font-size: 18px;
+}
+
+.producto-titulo {
+    font-size: 20px;
+    min-height: 70px;
+    margin-top: 10px;
+}
+
+.precio {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.member {
+    color: #6b3fa0;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.presentacion {
+    border: 2px solid #6b3fa0;
+    color: #6b3fa0;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.btn-morado {
+    background-color: #6b3fa0;
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-morado:hover {
+    background-color: #552d80;
+    color: purple;
+}
+.bg-purple {
+    background-color: #6b3fa0 !important;
+}
+
+.producto-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-card img {
+    height: 250px;
+    object-fit: contain;
+}
+
+.marca {
+    color: gray;
+}
+
+.producto-titulo {
+    min-height: 60px;
+}
+
+.precio {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.btn-morado {
+    background-color: #6b3fa0;
+    color: purple;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.btn-morado:hover {
+    background-color: #552d80;
+    color: white;
 }

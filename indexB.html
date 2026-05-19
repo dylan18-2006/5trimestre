@@ -27,52 +27,156 @@
                 <i class="bi bi-tiktok"></i>
             </div>
         </div>
-        <div id="info-general" class="d-flex align-items-center px-4 py-2 gap-3">
-            <a href="#">
+        <div id="info-general" class="d-flex align-items-center justify-content-between px-5 py-3">
+
+            <!-- LOGO -->
+            <a href="#" class="me-4">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqnsskPT2d5Bq81cOHOlB46utTSn0pMF8DHg&s"
-                    alt="logo" style="width:70px;">
+                    alt="logo" style="width:75px;">
             </a>
-            <div class="input-group mx-auto" style="max-width: 550px;">
-                <input type="search" class="form-control rounded-3" placeholder="Buscar productos, marcas y más...">
+
+            <!-- BÚSQUEDA -->
+            <div class="search-box mx-5">
+
+                <div class="input-group">
+
+                    <input type="search" class="form-control border-0 shadow-none"
+                        placeholder="Buscar productos, marcas y más...">
+
+                    <span class="input-group-text bg-white border-0">
+                        <i class="bi bi-search fs-4"></i>
+                    </span>
+
+                </div>
+
             </div>
-            <div class="d-flex align-items-center gap-3 ms-auto text-white">
-                <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-1">
-                    <i class="bi bi-person fs-5"></i> Mi cuenta
+
+            <!-- ICONOS D -->
+            <div class="d-flex align-items-center gap-5 text-white ms-4">
+
+                <a href="#" class="text-white text-decoration-none d-flex align-items-center gap-2">
+
+                    <i class="bi bi-person fs-3"></i>
+
+                    <span class="fw-semibold fs-5">
+                        Mi cuenta
+                    </span>
+
                 </a>
+
                 <a href="#" class="text-white text-decoration-none">
-                    <i class="bi bi-cart fs-5"></i>
+                    <i class="bi bi-cart3 fs-2"></i>
                 </a>
+
             </div>
+
         </div>
     </header>
     <!--N -->
-    <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
-        <div class="container-fluid px-4">
-            <ul class="navbar-nav d-flex flex-row gap-2">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Perro</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Alimento</a></li>
-                        <li><a class="dropdown-item" href="#">Juguetes</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-dark" href="#" data-bs-toggle="dropdown">Gato</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Alimento</a></li>
-                        <li><a class="dropdown-item" href="#">Arenas</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">Promociones</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">Tiendas</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">Laika Member</a></li>
-            </ul>
-            <button class="btn ms-auto d-flex align-items-center gap-2"
-                style="background-color:#560075; color:white; border-radius:8px;">
-                <i class="bi bi-geo-alt-fill"></i> Selecciona una ciudad
-                <i class="bi bi-chevron-down"></i>
-            </button>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm border-bottom mt-4">
+        <div class="container">
+            <div class="mx-auto">
+                <ul class="navbar-nav d-flex flex-row align-items-center gap-4">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Perro
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Alimento</a></li>
+                            <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                            <li><a class="dropdown-item" href="#">Ropa</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            Gato
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Alimento</a></li>
+                            <li><a class="dropdown-item" href="#">Arena</a></li>
+                            <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link  fw-semibold" href="#">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">
+                            Promociones
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">
+                            Tiendas
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">
+                            Laika Member
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- BOTÓN DERECHA -->
+            <div class="dropdown ms-auto">
+
+                <button class="btn text-white d-flex align-items-center gap-2 px-4 py-2"
+                    style="background-color:#5c2d91;" data-bs-toggle="dropdown">
+
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Selecciona una ciudad
+                    <i class="bi bi-chevron-down"></i>
+
+                </button>
+
+                <ul class="dropdown-menu dropdown-menu-end shadow">
+
+                    <li>
+                        <a class="dropdown-item py-2" href="#">
+                            Bogotá D.C.
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item py-2" href="#">
+                            Medellín
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item py-2" href="#">
+                            Cali
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item py-2" href="#">
+                            Barranquilla
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item py-2" href="#">
+                            Bucaramanga
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- C -->
@@ -124,6 +228,257 @@
                 alt="gato">
         </div>
     </section>
+    <!-- PRODUCTOS -->
+    <section class="container my-5">
+
+        <!-- TITULO -->
+        <div class="mb-4">
+            <h1 class="fw-bold">
+                Favoritos para tu PET-AMIGO
+            </h1>
+
+            <p class="text-secondary fs-5">
+                Descubre descuentos exclusivos, combos y precios especiales en nuestros productos por tiempo
+                limitado.
+            </p>
+        </div>
+
+        <!-- CARDS -->
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-xl col-lg-3 col-md-4 col-sm-6">
+                <div class="card producto-card h-100 border-0 shadow-sm">
+
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fproducts-3%2Ff3ccdd27d2000e3f9255a7e3e2c48800_1692135452.jpg&w=640&q=75"
+                        class="card-img-top p-4" alt="producto">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="marca">
+                            Por Heel
+                        </span>
+
+                        <h5 class="producto-titulo">
+                            Heel - Engystol Tabletas
+                        </h5>
+
+                        <h2 class="precio">
+                            $142.000
+                        </h2>
+
+                        <span class="text-secondary">
+                            ($14.200/gr)
+                        </span>
+
+                        <p class="member">
+                            Member $132.060 👑
+                        </p>
+
+                        <div class="mt-auto">
+
+                            <span class="presentacion">
+                                100 tabletas
+                            </span>
+
+                            <button class="btn btn-morado w-100 mt-4">
+                                Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-xl col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card producto-card h-100 border-0 shadow-sm">
+
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fproducts%2Fa6350e730fbbd7f42a9e827c1dd15f77_1776796589.jpg&w=640&q=75"
+                        class="card-img-top p-4" alt="producto">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="marca">
+                            Por Fresh step
+                        </span>
+
+                        <h5 class="producto-titulo">
+                            Fresh Step - Arena Multi Cat con Febreze
+                        </h5>
+
+                        <h2 class="precio">
+                            $70.900
+                        </h2>
+
+                        <span class="text-secondary">
+                            ($11,15/gr)
+                        </span>
+
+                        <p class="member">
+                            Member $65.228 👑
+                        </p>
+
+                        <div class="mt-auto">
+
+                            <span class="presentacion">
+                                14 LB
+                            </span>
+
+                            <button class="btn btn-morado w-100 mt-4">
+                                Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-xl col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card producto-card h-100 border-0 shadow-sm">
+
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fproducts%2F9ac11193875df311956e09aa6f015609_1759433940.jpg&w=640&q=75"
+                        class="card-img-top p-4" alt="producto">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="marca">
+                            Por Peluditos barf
+                        </span>
+
+                        <h5 class="producto-titulo">
+                            Peluditos Barf - Natural Barf
+                        </h5>
+
+                        <h2 class="precio">
+                            $3.600
+                        </h2>
+
+                        <span class="text-secondary">
+                            ($12/gr)
+                        </span>
+
+                        <p class="member">
+                            Member $3.420 👑
+                        </p>
+
+                        <div class="mt-auto">
+
+                            <span class="presentacion">
+                                300 GR
+                            </span>
+
+                            <button class="btn btn-morado w-100 mt-4">
+                                Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-xl col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card producto-card h-100 border-0 shadow-sm">
+
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fproducts-3%2F0009aa26f62b8daa503a61243e4091c0_1686267733.jpg&w=640&q=75"
+                        class="card-img-top p-4" alt="producto">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="marca">
+                            Por Paw day
+                        </span>
+
+                        <h5 class="producto-titulo">
+                            Paw Day - Pescado Eléctrico
+                        </h5>
+
+                        <h2 class="precio">
+                            $30.300
+                        </h2>
+
+                        <span class="text-secondary">
+                            ($37,88/gr)
+                        </span>
+
+                        <p class="member">
+                            Member $27.270 👑
+                        </p>
+
+                        <div class="mt-auto">
+
+                            <span class="presentacion">
+                                ÚNICA
+                            </span>
+
+                            <button class="btn btn-morado w-100 mt-4">
+                                Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="col-xl col-lg-3 col-md-4 col-sm-6">
+
+                <div class="card producto-card h-100 border-0 shadow-sm">
+
+                    <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fproducts%2Fad77d5febc4f19d928fe5867fc6d3b68_1739306871.jpg&w=640&q=75"
+                        class="card-img-top p-4" alt="producto">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="marca">
+                            Por Hills
+                        </span>
+
+                        <h5 class="producto-titulo">
+                            Hills Pd Metabolic - Alimento Perro
+                        </h5>
+
+                        <h2 class="precio">
+                            $235.900
+                        </h2>
+
+                        <span class="text-secondary">
+                            ($67,59/gr)
+                        </span>
+
+                        <p class="member">
+                            Member $214.669 👑
+                        </p>
+
+                        <div class="mt-auto">
+
+                            <span class="presentacion">
+                                7.7 LB
+                            </span>
+
+                            <button class="btn btn-morado w-100 mt-4">
+                                Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
     <!--info empresa articulo-->
     <section class="caja">
         <div class="caja-imagenes">
@@ -151,6 +506,171 @@
                 estrella polar.
             </p>
         </article>
+    </section>
+    <div id="carouselMarcas" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <!-- PÁGINA 1 -->
+            <div class="carousel-item active">
+                <div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fbrands%2Fnutra-nuggets.png&w=256&q=75"
+                                alt="Nutra-Nuggets" class="img-fluid" style="max-height:70px; object-fit:contain;"
+                                onerror="this.parentElement.innerHTML='<span class=\'fw-bold text-dark\'>NUTRA-<br>NUGGETS</span>'">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fbrands%2Fpurina-pro-plan.png&w=256&q=75"
+                                alt="Purina Pro Plan" class="img-fluid" style="max-height:70px; object-fit:contain;"
+                                onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'fw-bold text-dark text-center\'>PURINA<br>PRO PLAN</span>'">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold fs-3" style="color:#f47920;">MAX</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fbrands%2Fpetprime.png&w=256&q=75"
+                                alt="PetPrime" class="img-fluid" style="max-height:70px; object-fit:contain;"
+                                onerror="this.parentElement.innerHTML='<span class=\'fw-bold text-success\'>PetPrime</span>'">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark text-center" style="letter-spacing:2px;">EQUILÍBRIO</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row g-3 mt-0">
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <img src="https://laika.com.co/_next/image?url=https%3A%2F%2Fstatic.laika.digital%2Fbrands%2Fhills.png&w=256&q=75"
+                                alt="Hills" class="img-fluid" style="max-height:70px; object-fit:contain;"
+                                onerror="this.parentElement.innerHTML='<span class=\'fw-bold text-danger fs-4\'>Hill\'s</span>'">
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark" style="letter-spacing:1px;">4 MOMENTS</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-center" style="color:#8b6914;">BR<span
+                                    class="text-dark">for</span>DOG<br><small class="fw-normal fst-italic"
+                                    style="color:#8b6914;">Pure</small></span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-center" style="color:#8b6914;">BR<span
+                                    class="text-dark">for</span>CAT<br><small class="fw-normal fst-italic"
+                                    style="color:#e83e8c;">Pure</small></span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-danger" style="letter-spacing:1px;">ROYAL CANIN</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PÁGINA 2 -->
+            <div class="carousel-item">
+                <div class="row g-3">
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Eukanuba</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Pedigree</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Whiskas</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Fancy Feast</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Iams</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row g-3 mt-0">
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Science Diet</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Acana</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Orijen</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Taste of the Wild</span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg col-xl">
+                        <a href="#" class="d-flex align-items-center justify-content-center bg-white rounded border p-4"
+                            style="min-height:120px;">
+                            <span class="fw-bold text-dark">Blue Buffalo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- INDICADORES -->
+        <div class="d-flex justify-content-center mt-3 gap-2">
+            <button type="button" data-bs-target="#carouselMarcas" data-bs-slide-to="0"
+                class="rounded-circle border-0 active"
+                style="width:12px;height:12px;background-color:#5c2d91;"></button>
+            <button type="button" data-bs-target="#carouselMarcas" data-bs-slide-to="1" class="rounded-circle border-0"
+                style="width:12px;height:12px;background-color:#ccc;"></button>
+        </div>
+
+    </div>
     </section>
     <!--linea divisoria-->
     <div class="linea-con-icono">
